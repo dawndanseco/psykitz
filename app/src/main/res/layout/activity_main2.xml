@@ -12,17 +12,63 @@
         android:id="@+id/tvLearnToday"
         android:layout_width="323dp"
         android:layout_height="72dp"
+        android:layout_marginTop="96dp"
         android:text="What would you like to learn today? 🤖"
         android:textColor="@color/teal"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="135dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:id="@+id/ivDivider"
+        android:layout_width="323dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/line_divider"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="228dp" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLearnToday"
+        app:srcCompat="@drawable/line_divider" />
+
+    <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="30dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/ivStartLearning"
+        android:layout_width="323dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivDivider"
+        app:srcCompat="@drawable/start_learning" />
+
+    <ImageView
+        android:id="@+id/ivActivity"
+        android:layout_width="323dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivStartLearning"
+        app:srcCompat="@drawable/activity" />
+
+    <ImageView
+        android:id="@+id/ivNavigation"
+        android:layout_width="263dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivActivity"
+        app:layout_constraintVertical_bias="0.783"
+        app:srcCompat="@drawable/naviagtion" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
