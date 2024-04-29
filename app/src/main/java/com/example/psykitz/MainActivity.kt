@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         btContinue.setOnClickListener {
-            // Navigate to MainActivity2
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
