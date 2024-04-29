@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/dwhite">
 
     <TextView
         android:id="@+id/tvWelcome"
@@ -27,8 +28,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="172dp"
         android:background="@android:color/transparent"
-        android:text="Dive in and bring your ideas
-to life! 🤖"
+        android:text="Dive in and bring your ideas to life! 🤖"
         android:textColor="@color/teal"
         android:textSize="50dp"
         app:layout_constraintStart_toStartOf="parent"
