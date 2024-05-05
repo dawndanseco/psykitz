@@ -32,16 +32,6 @@
         app:srcCompat="@drawable/line_divider" />
 
     <ImageView
-        android:id="@+id/ivInfo"
-        android:layout_width="30dp"
-        android:layout_height="14dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/info" />
-
-    <ImageView
         android:id="@+id/ivStartLearning"
         android:layout_width="323dp"
         android:layout_height="119dp"
