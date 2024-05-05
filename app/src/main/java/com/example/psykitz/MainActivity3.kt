@@ -10,7 +10,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.psykitz.R
 
 class MainActivity3 : AppCompatActivity() {
     private val ourRequestCode: Int = 123
@@ -42,9 +41,10 @@ class MainActivity3 : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == ourRequestCode && resultCode == RESULT_OK) {
-            val imageView: ImageView = findViewById(R.id.ivCamera)
             val bitmap = data?.extras?.get("data") as Bitmap
-            imageView.setImageBitmap(bitmap)
+            val intent = Intent(this, MainActivity4::class.java)
+            intent.putExtra("capturedImage", bitmap)
+            startActivity(intent)
         }
     }
 }
