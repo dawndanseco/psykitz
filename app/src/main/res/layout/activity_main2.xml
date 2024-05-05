@@ -10,9 +10,10 @@
 
     <TextView
         android:id="@+id/tvLearnToday"
-        android:layout_width="323dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="96dp"
+        android:layout_width="351dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
         android:text="What would you like to learn today? 🤖"
         android:textColor="@color/teal"
         android:textSize="30dp"
@@ -24,7 +25,7 @@
         android:id="@+id/ivDivider"
         android:layout_width="323dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvLearnToday"
@@ -34,7 +35,7 @@
         android:id="@+id/ivInfo"
         android:layout_width="30dp"
         android:layout_height="14dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -44,7 +45,7 @@
         android:id="@+id/ivStartLearning"
         android:layout_width="323dp"
         android:layout_height="119dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ivDivider"
@@ -64,11 +65,24 @@
         android:id="@+id/ivNavigation"
         android:layout_width="263dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivActivity"
-        app:layout_constraintVertical_bias="0.783"
         app:srcCompat="@drawable/naviagtion" />
+
+    <ImageView
+        android:id="@+id/ivCamera"
+        android:layout_width="398dp"
+        android:layout_height="135dp"
+        android:onClick="takePhoto"
+        app:layout_constraintBottom_toTopOf="@+id/ivNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivActivity"
+        app:layout_constraintVertical_bias="0.196"
+        app:srcCompat="@drawable/camera" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
