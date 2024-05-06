@@ -11,12 +11,8 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        // Find the ImageView
         val ivCamera: ImageView = findViewById(R.id.ivCamera)
-
-        // Set OnClickListener for the ImageView
         ivCamera.setOnClickListener {
-            // Start the NextActivity
             startActivity(Intent(this, MainActivity3::class.java))
         }
     }

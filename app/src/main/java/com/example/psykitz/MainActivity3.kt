@@ -23,8 +23,6 @@ class MainActivity3 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        // Setting click listener for ivUploadBtn
         val uploadBtn: ImageView = findViewById(R.id.ivUploadBtn)
         uploadBtn.setOnClickListener {
             openCamera()
